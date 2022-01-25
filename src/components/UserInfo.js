@@ -1,4 +1,5 @@
 import React from "react";
+import "./Counter.css";
 
 class UserInfo extends React.Component {
   render() {
@@ -6,9 +7,18 @@ class UserInfo extends React.Component {
       <div>
         <ul>
           <li>
-            <p>Name : {this.props.name}</p>
-            <p>Email : {this.props.email}</p>
-            <p>Website : {this.props.website}</p>
+            <p>
+              <span>Name : </span>
+              {this.props.name}
+            </p>
+            <p>
+              <span>Email : </span>
+              {this.props.email}
+            </p>
+            <p>
+              <span>Website : </span>
+              {this.props.website}
+            </p>
           </li>
         </ul>
       </div>

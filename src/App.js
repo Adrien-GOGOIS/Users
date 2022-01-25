@@ -1,8 +1,12 @@
 import "./App.css";
+import "./components/Counter.css";
 import React from "react";
 
 import users from "./users.json";
+
+// COMPONENTS
 import UserInfo from "./components/UserInfo";
+import Counter from "./components/Counter.js";
 
 const data = users.map((user) => {
   return (
@@ -14,7 +18,13 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <ul>{data}</ul>
+        <div>
+          <h1>Counter</h1>
+          <Counter increment="+" substract="-" />
+        </div>
+        <div>
+          <ul>{data}</ul>
+        </div>
       </div>
     );
   }
