@@ -61,7 +61,7 @@ class App extends React.Component {
         </div>
 
         {/* Div de liste des users en fonction du count */}
-        <div>
+        <div className="nameList">
           {/* On récupère la variable DATA et on sélectionne à l'intérieur le nombre d'Users en fonction du state */}
           <ul>{data.slice(0, this.state.count)}</ul>
         </div>
