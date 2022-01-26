@@ -15,6 +15,27 @@ class App extends React.Component {
     this.state = {
       count: 10,
     };
+
+    this.substract = this.substract.bind(this);
+    this.increment = this.increment.bind(this);
+  }
+
+  // FONCTION DE SOUSTRACTION
+  substract() {
+    if (this.state.count > 1) {
+      this.setState((prevState) => {
+        return { count: prevState.count - 1 };
+      });
+    }
+  }
+
+  // FONCTION D'ADDITION
+  increment() {
+    if (this.state.count < 10) {
+      this.setState((prevState) => {
+        return { count: prevState.count + 1 };
+      });
+    }
   }
 
   render() {
@@ -34,20 +55,8 @@ class App extends React.Component {
           {/* On affiche le compteur avec les props increment et substract*/}
           <Counter
             count={this.state.count}
-            increment={() => {
-              if (this.state.count < 10) {
-                this.setState((prevState) => {
-                  return { count: prevState.count + 1 };
-                });
-              }
-            }}
-            substract={() => {
-              if (this.state.count > 1) {
-                this.setState((prevState) => {
-                  return { count: prevState.count - 1 };
-                });
-              }
-            }}
+            increment={this.increment}
+            substract={this.substract}
           />
         </div>
 
