@@ -1,3 +1,5 @@
+// COMPONENT INUTILE DANS LA DERNIERE VERSION DE L'EXERCICE
+
 import React from "react";
 import "./Counter.css";
 
@@ -16,3 +18,5 @@ class CounterBis extends React.Component {
 }
 
 export default CounterBis;
+
+// COMPONENT INUTILE DANS LA DERNIERE VERSION DE L'EXERCICE

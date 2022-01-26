@@ -1,6 +1,7 @@
 import React from "react";
 import "./Counter.css";
 
+// Component du compteur
 class Counter extends React.Component {
   render() {
     return (
@@ -12,23 +13,7 @@ class Counter extends React.Component {
     );
   }
 }
-//   render() {
-//     return (
-//       <div>
-//         <h2>{this.props.count}</h2>
-//         <button onClick={this.setState({ count: this.state.count - 1 })}>
-//           -
-//         </button>
-//         <button
-//           onClick={() => {
-//             this.setState({ count: this.state.count + 1 });
-//           }}
-//         >
-//           +
-//         </button>
-//       </div>
-//     );
-//   }
-// }
+
+// On retourne 2 boutons contenant un évènement onClick détaillé dans le fichier parent App.js
 
 export default Counter;
